@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "weather-table": "/components/weather-table/weather-table"
+  }
+}

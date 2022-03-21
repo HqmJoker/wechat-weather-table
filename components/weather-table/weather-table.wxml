@@ -1,0 +1,11 @@
+<scroll-view class="weather-table" scroll-x>
+  <view class="weather-column" wx:for="{{ weatherData }}" wx:for-index="weatherColumnIndex" wx:key="weatherColumnIndex" wx:for-item="weatherColumn" data-index="{{ weatherColumnIndex }}" bindtap="clickDayColumn">
+    <view wx:for="{{ weatherColumn }}" wx:for-index="columnParmasIndex" wx:key="columnParmasIndex" wx:for-item="columnParams" class="params">
+      <image class="{{ columnParams.type }}" wx:if="{{ columnParams.type === 'icon' }}" mode="aspectFit" src="{{ columnParams.value }}"></image>
+      <text class="{{ columnParams.type }}" wx:else>{{ columnParams.value }}{{columnParams.unit }}</text>
+    </view>
+  </view>
+  <view class="weather-table-dom" style="top: {{ chartPositionIndex * 70 + 30 }}rpx; width: {{ weatherData.length * 121 - 70 }}rpx;">
+    <ec-canvas type="2d"  id="weather-table-dom" ec="{{ ec }}"></ec-canvas>
+  </view>
+</scroll-view>

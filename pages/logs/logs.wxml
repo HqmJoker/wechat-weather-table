@@ -1,0 +1,8 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <!-- <scroll-view class="weather-table" scroll-x>
+    <view class="hour-forecast-chart" style="width: {{ chartWidth? chartWidth : 750 }}rpx">
+      <ec-canvas type="2d" id="weather-table-dom" ec="{{ ec }}"></ec-canvas>
+    </view>
+  </scroll-view> -->
+</view>

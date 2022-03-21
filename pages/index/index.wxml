@@ -1,0 +1,10 @@
+<view class="container">
+  <!-- 无图表的天气 -->
+  <view class="tableBox"><weather-table weatherData="{{ testData2 }}" bind:clickDayColumn="testClick"></weather-table></view>
+  <view>------------------分割线-------------------</view>
+  <!-- 单个折线图表的天气 -->
+  <view class="tableBox"><weather-table weatherData="{{ testData }}" option="{{ testDataChartOption }}" bind:clickDayColumn="testClick1"></weather-table></view>
+  <view>------------------分割线-------------------</view>
+  <!-- 两个折线图表的天气 -->
+  <view class="tableBox"><weather-table weatherData="{{ testData1 }}" option="{{ testData1ChartOption }}"></weather-table></view>
+</view>
